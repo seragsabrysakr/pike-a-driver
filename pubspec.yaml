@@ -1,0 +1,81 @@
+name: delivery
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  custom_info_window: ^1.0.1
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_svg: ^0.22.0
+  intl: ^0.17.0
+  marker_icon: ^0.7.1
+  image_picker: ^0.7.0
+  sizer: ^2.0.15
+  webview_flutter: ^3.0.4
+dev_dependencies:
+  bloc: ^8.0.3
+  dio: ^4.0.6
+  flutter_bloc: ^8.0.1
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+  geolocator: ^8.2.1
+  google_maps_flutter: ^2.1.7
+  shared_preferences: ^2.0.15
+
+  
+flutter:
+
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/social/
+    - assets/images/imgslider/
+    - assets/images/navbar/
+    - assets/images/moreicons/
+    - assets/images/menuicons/
+    - assets/images/map/
+
+  #   - images/a_dot_ham.jpeg
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Metropolis
+      fonts:
+        - asset: assets/fonts/Metropolis-ExtraBold.otf
+          weight: 800
+        - asset: assets/fonts/Metropolis-Black.otf
+          weight: 900
+        - asset: assets/fonts/Metropolis-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Metropolis-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/Metropolis-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Metropolis-Regular.otf
+          weight: 400
+        - asset: assets/fonts/Metropolis-Light.otf
+          weight: 300
+        - asset: assets/fonts/Metropolis-ExtraLight.otf
+          weight: 200
+flutter_intl:
+  enabled: true

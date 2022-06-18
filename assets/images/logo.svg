@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="226.612" height="74.818" viewBox="0 0 226.612 74.818">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_17365" data-name="Rectangle 17365" width="226.612" height="74.818" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_8218" data-name="Group 8218" transform="translate(0 0)">
+    <g id="Group_8215" data-name="Group 8215" transform="translate(0 0)">
+      <g id="Group_8214" data-name="Group 8214" clip-path="url(#clip-path)">
+        <path id="Path_10292" data-name="Path 10292" d="M24.526,12.456H7.84a2.073,2.073,0,1,1,0-4.145H24.526a2.073,2.073,0,0,1,0,4.145" transform="translate(2.369 3.414)" fill="#ed771b"/>
+        <path id="Path_10293" data-name="Path 10293" d="M21.641,17.156H4.957a2.073,2.073,0,0,1,0-4.145H21.641a2.073,2.073,0,1,1,0,4.145" transform="translate(1.185 5.345)" fill="#ed771b"/>
+        <path id="Path_10294" data-name="Path 10294" d="M18.757,21.857H2.073a2.073,2.073,0,1,1,0-4.145H18.757a2.073,2.073,0,1,1,0,4.145" transform="translate(0 7.277)" fill="#ed771b"/>
+        <path id="Path_10295" data-name="Path 10295" d="M21.641,26.557H4.957a2.073,2.073,0,1,1,0-4.145H21.641a2.073,2.073,0,1,1,0,4.145" transform="translate(1.185 9.208)" fill="#ed771b"/>
+        <path id="Path_10296" data-name="Path 10296" d="M24.526,31.258H7.84a2.073,2.073,0,1,1,0-4.145H24.526a2.073,2.073,0,0,1,0,4.145" transform="translate(2.369 11.139)" fill="#ed771b"/>
+        <path id="Path_10297" data-name="Path 10297" d="M61.371,32.145a26.393,26.393,0,0,1-11.611,16.6,27.1,27.1,0,0,1-6.738,3.077l-1.078.315-2.966-4.649a7.793,7.793,0,0,1-1.055-6.019,8.263,8.263,0,0,1,3.751-5.278,11.509,11.509,0,1,0-15.812-3.55L43.314,60a8.094,8.094,0,0,1-2.47,11.163l-5.751,3.661-.831-1.236-21-32.927a26.43,26.43,0,1,1,48.109-8.512" transform="translate(3.74 0)" fill="#261c6a"/>
+      </g>
+    </g>
+    <text id="Pick" transform="translate(78.038 51.109)" fill="#261c6a" font-size="48" font-family="ChunkFive-Roman, ChunkFive"><tspan x="0" y="0">Pick</tspan></text>
+    <text id="_." data-name="." transform="translate(184.589 51.109)" fill="#2c2863" font-size="48" font-family="ChunkFive-Roman, ChunkFive"><tspan x="0" y="0">.</tspan></text>
+    <g id="Group_8217" data-name="Group 8217" transform="translate(0 0)">
+      <g id="Group_8216" data-name="Group 8216" clip-path="url(#clip-path)">
+        <text id="a" transform="translate(197.219 52.108)" fill="#261c6a" font-size="49" font-family="ChunkFive-Roman, ChunkFive"><tspan x="0" y="0">a</tspan></text>
+        <path id="Path_10298" data-name="Path 10298" d="M143.081,34.934a6.352,6.352,0,1,1-6.352-6.352,6.352,6.352,0,0,1,6.352,6.352" transform="translate(53.567 11.743)" fill="#ed771b"/>
+      </g>
+    </g>
+  </g>
+</svg>

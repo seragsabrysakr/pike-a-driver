@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="34"
+   viewBox="0 0 30 34"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="menuicon.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="6.9411765"
+     inkscape:cx="15"
+     inkscape:cy="11.237288"
+     inkscape:window-x="797"
+     inkscape:window-y="90"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Group_6815" />
+  <g
+     id="Group_6818"
+     data-name="Group 6818"
+     transform="translate(-327 -751)">
+    <g
+       id="layer1-1"
+       inkscape:label="Layer 1"
+       transform="matrix(3.7795276,0,0,3.7795276,-31.184675,214.97249)">
+      <g
+         transform="matrix(0.26458333,0,0,0.26458333,91.228484,-57.374336)"
+         data-name="Group 6815"
+         id="Group_6815">
+        <g
+           transform="matrix(1.1955206,0,0,1.3395884,16.95581,-1834.5364)"
+           data-name="Group 6847"
+           id="Group_6847"
+           inkscape:transform-center-x="2.2390682"
+           inkscape:transform-center-y="2.7019243">
+          <rect
+             transform="translate(3,1936)"
+             rx="1"
+             height="6"
+             width="6"
+             data-name="Rectangle 17318"
+             id="Rectangle_17318"
+             x="0"
+             y="0"
+             style="fill:#ff7800" />
+          <rect
+             transform="translate(3,1944)"
+             rx="1"
+             height="6"
+             width="6"
+             data-name="Rectangle 17321"
+             id="Rectangle_17321"
+             x="0"
+             y="0"
+             style="fill:#ff7800" />
+          <rect
+             transform="translate(11,1936)"
+             rx="1"
+             height="6"
+             width="6"
+             data-name="Rectangle 17319"
+             id="Rectangle_17319"
+             x="0"
+             y="0"
+             style="fill:#ff7800" />
+          <rect
+             transform="translate(11,1944)"
+             rx="1"
+             height="6"
+             width="6"
+             data-name="Rectangle 17320"
+             id="Rectangle_17320"
+             x="0"
+             y="0"
+             style="fill:#ff7800" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

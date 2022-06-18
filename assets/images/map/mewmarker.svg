@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Group_8208"
+   data-name="Group 8208"
+   width="178"
+   height="116.468"
+   viewBox="0 0 178 116.468"
+   version="1.1"
+   sodipodi:docname="mewmarker.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview5"
+     showgrid="false"
+     inkscape:zoom="1.5955056"
+     inkscape:cx="88.999999"
+     inkscape:cy="58.234"
+     inkscape:window-x="204"
+     inkscape:window-y="314"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Group_8208" />
+  <rect
+     id="Rectangle_445"
+     data-name="Rectangle 445"
+     width="140.39436"
+     height="63.021126"
+     rx="9.4647884"
+     x="-0.62676632"
+     y="53.446869"
+     style="fill:#ff7800;stroke-width:0.70503056" />
+  <path
+     id="Path_8565"
+     data-name="Path 8565"
+     d="m 139.76759,62.221518 h -28 l 28,-28 z"
+     inkscape:connector-curvature="0"
+     style="fill:#ff7800" />
+  <g
+     data-name="Group 720"
+     id="Group_720"
+     transform="matrix(0.42459122,0.04559626,-0.04106875,0.47139916,132.81319,-0.67593391)">
+    <path
+       transform="translate(-70.573)"
+       d="M 95.848,0 A 25.3,25.3 0 0 0 70.573,25.275 c 0,17.3 22.619,42.687 23.582,43.76 a 2.277,2.277 0 0 0 3.387,0 c 0.963,-1.072 23.582,-26.464 23.582,-43.76 A 25.3,25.3 0 0 0 95.848,0 Z m 0,37.992 A 12.717,12.717 0 1 1 108.564,25.276 12.731,12.731 0 0 1 95.848,37.992 Z"
+       data-name="Path 4292"
+       id="Path_4292"
+       inkscape:connector-curvature="0"
+       style="fill:#ff7800" />
+  </g>
+</svg>

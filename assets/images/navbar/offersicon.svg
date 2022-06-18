@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="34"
+   viewBox="0 0 30 34"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="offersicon.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="6.9411765"
+     inkscape:cx="15"
+     inkscape:cy="11.237288"
+     inkscape:window-x="797"
+     inkscape:window-y="90"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Group_6816" />
+  <g
+     id="Group_6818"
+     data-name="Group 6818"
+     transform="translate(-327 -751)">
+    <g
+       id="layer1-1"
+       inkscape:label="Layer 1"
+       transform="matrix(3.7795276,0,0,3.7795276,-31.184675,214.97249)">
+      <g
+         transform="matrix(0.26458333,0,0,0.26458333,91.228484,-57.374336)"
+         data-name="Group 6815"
+         id="Group_6815">
+        <g
+           transform="matrix(1.1955206,0,0,1.3395884,16.95581,-1834.5364)"
+           data-name="Group 6847"
+           id="Group_6847"
+           inkscape:transform-center-x="2.2390682"
+           inkscape:transform-center-y="2.7019243">
+          <g
+             transform="matrix(0.83645568,0,0,0.74649796,-66.027849,1371.752)"
+             data-name="Group 6816"
+             id="Group_6816">
+            <g
+               transform="matrix(1.3464037,0,0,1.3087603,79.399332,746.68806)"
+               data-name="002-shopping-bag"
+               id="_002-shopping-bag">
+              <path
+                 transform="translate(0,-133.629)"
+                 d="m 16.214,155.407 -1.173,-10.484 a 0.475,0.475 0 0 0 -0.472,-0.422 H 1.646 a 0.475,0.475 0 0 0 -0.472,0.422 L 0,155.407 a 0.475,0.475 0 0 0 0.472,0.528 h 15.27 a 0.475,0.475 0 0 0 0.472,-0.528 z"
+                 data-name="Path 4245"
+                 id="Path_4245"
+                 inkscape:connector-curvature="0"
+                 style="fill:#4e22d0" />
+              <path
+                 transform="translate(-247.892,-133.629)"
+                 d="m 264.107,155.407 -1.172,-10.484 a 0.475,0.475 0 0 0 -0.472,-0.422 H 256 v 11.434 h 7.633 a 0.475,0.475 0 0 0 0.472,-0.528 z"
+                 data-name="Path 4246"
+                 id="Path_4246"
+                 inkscape:connector-curvature="0"
+                 style="fill:#4e22d0" />
+              <circle
+                 transform="translate(4.102,12.408)"
+                 r="0.94999999"
+                 cy="0.94999999"
+                 cx="0.94999999"
+                 data-name="Ellipse 14"
+                 id="Ellipse_14"
+                 style="fill:#4e22d0" />
+              <circle
+                 transform="translate(10.215,12.408)"
+                 r="0.94999999"
+                 cy="0.94999999"
+                 cx="0.94999999"
+                 data-name="Ellipse 15"
+                 id="Ellipse_15"
+                 style="fill:#4e22d0" />
+              <g
+                 transform="translate(4.577,6.501)"
+                 data-name="Group 2273"
+                 id="Group_2273">
+                <path
+                   transform="translate(-144.501,-6.501)"
+                   d="M 151.089,13.675 A 0.475,0.475 0 0 1 150.614,13.2 v -3.167 a 2.5815,2.5815 0 0 0 -5.163,0 V 13.2 a 0.475,0.475 0 1 1 -0.95,0 v -3.167 a 3.532,3.532 0 1 1 7.063,0 V 13.2 a 0.475,0.475 0 0 1 -0.475,0.475 z"
+                   data-name="Path 4247"
+                   id="Path_4247"
+                   inkscape:connector-curvature="0"
+                   style="fill:#4e22d0" />
+              </g>
+              <path
+                 transform="translate(-247.892)"
+                 d="m 256,6.5 v 0.95 a 2.584,2.584 0 0 1 2.581,2.581 V 13.2 a 0.475,0.475 0 0 0 0.95,0 V 10.033 A 3.536,3.536 0 0 0 256,6.5 Z"
+                 data-name="Path 4248"
+                 id="Path_4248"
+                 inkscape:connector-curvature="0"
+                 style="fill:#4e22d0" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
