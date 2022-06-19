@@ -237,23 +237,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
       butcolor: Colors.white,
       txtcolor: MyColors.goldColor,
       ontap: () {
-        showGeneralDialog(
-          context: context,
-          barrierLabel: "withdraw",
-          barrierDismissible: true,
-          barrierColor: Colors.black.withOpacity(0.5),
-          transitionDuration: const Duration(milliseconds: 400),
-          pageBuilder: (context, anim1, anim2) {
-            return const AddCard();
-          },
-          transitionBuilder: (context, anim1, anim2, child) {
-            return SlideTransition(
-              position: Tween(begin: const Offset(0, 1), end: Offset.zero)
-                  .animate(anim1),
-              child: child,
-            );
-          },
-        );
+        bottomSheet(context, const AddCard());
       },
       text: App.tr.addanothercard,
     );

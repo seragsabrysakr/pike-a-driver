@@ -29,25 +29,25 @@ class AppRoutes {
         return MaterialPageRoute(builder: (context) => const ConfirmCode());
       case ChangePassword.id:
         return MaterialPageRoute(builder: (context) => const ChangePassword());
-     
+
       case MyOrderScreen.id:
         return MaterialPageRoute(builder: (context) => const MyOrderScreen());
       case PaymentScreen.id:
         return MaterialPageRoute(builder: (context) => const PaymentScreen());
       case EndOrder.id:
         return MaterialPageRoute(builder: (context) => const EndOrder());
-      
+
       case ChangeAdressMap.id:
         return MaterialPageRoute(builder: (context) => const ChangeAdressMap());
       case TrackOrderMap.id:
         return MaterialPageRoute(builder: (context) => TrackOrderMap());
-      
+
       default:
         return undefineRout();
     }
   }
 
   static Route<dynamic> undefineRout() {
-    return MaterialPageRoute(builder: (context) => const IntroOnce());
+    return MaterialPageRoute(builder: (context) => const MainScreen());
   }
 }

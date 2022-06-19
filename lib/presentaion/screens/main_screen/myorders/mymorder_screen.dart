@@ -4,12 +4,12 @@ import 'package:flutter_gen/gen_l10n/app_localization.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../businesslogic/product_cubit/rating_widget.dart';
+import '../../../../main.dart';
 import '../../../../shared/colors.dart';
 import '../../../../shared/functions.dart';
 import '../../../../shared/resurces.dart';
 import '../../../widget/custombutton.dart';
 import '../../../widget/customtext.dart';
-import '../../maps/track_order_map.dart';
 
 class MyOrderScreen extends StatelessWidget {
   const MyOrderScreen({Key? key}) : super(key: key);
@@ -17,41 +17,17 @@ class MyOrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: InkWell(
-          onTap: () {
-            navigateback(context: context);
-          },
-          child: const Icon(Icons.arrow_back_ios),
-        ),
-        title: CustomText(
-          data: AppLocalizations.of(context)!.myOrder,
-          size: 20.sp,
-          weight: FontWeight.bold,
-        ),
-        actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart)),
-          SizedBox(
-            width: 1.h,
-          ),
-        ],
-      ),
+      appBar: _appbar(context),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 5.w),
             child: Column(
               children: [
-                SizedBox(
-                  height: 2.h,
-                ),
                 _orderdetails(
                     context,
                     _orderdone(
                       context,
-                      track: () {
-                        navigateto(context: context, screen: TrackOrderMap.id);
-                      },
                       cancel: () {
                         print('cancel');
                       },
@@ -76,163 +52,170 @@ class MyOrderScreen extends StatelessWidget {
     );
   }
 
+  AppBar _appbar(BuildContext context) {
+    return AppBar(
+      leading: InkWell(
+        onTap: () {
+          navigateback(context: context);
+        },
+        child: const Icon(Icons.arrow_back_ios),
+      ),
+      title: CustomText(
+        data: AppLocalizations.of(context)!.myOrder,
+        size: 19.sp,
+        weight: FontWeight.w800,
+      ),
+      actions: [
+        IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart)),
+        SizedBox(
+          width: 1.h,
+        ),
+      ],
+    );
+  }
+
   _orderdetails(context, Widget widget) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 1.h),
       child: Container(
         decoration: BoxDecoration(
-            color: MyColors.textFormColor,
+            color: MyColors.cardColors,
             borderRadius: BorderRadius.circular(5.w)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(
-              height: 10,
-            ),
-            InkWell(
-              onTap: () {},
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 3.w),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 8.h,
-                      width: 8.h,
-                      decoration: BoxDecoration(
-                        image: const DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage(
-                              Resurces.offerimg,
-                            )),
-                        borderRadius: BorderRadius.circular(1.h),
-                        color: Colors.green,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 18.w,
+                    width: 18.w,
+                    decoration: BoxDecoration(
+                      image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage(
+                            Resurces.order,
+                          )),
+                      borderRadius: BorderRadius.circular(1.5.h),
+                      color: Colors.green,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 4.w,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CustomText(
+                        data: App.tr.resturname,
+                        size: 11.sp,
+                        weight: FontWeight.w800,
                       ),
-                    ),
-                    SizedBox(
-                      width: 3.w,
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CustomText(
-                          data: AppLocalizations.of(context)!.resturname,
-                          size: 12.sp,
-                          weight: FontWeight.bold,
-                        ),
-                        SizedBox(
-                          height: .5.h,
-                        ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.star,
-                              color: MyColors.goldColor,
-                              size: 9.sp,
-                            ),
-                            CustomText(
-                              data: '4.9',
-                              size: 9.sp,
-                              color: MyColors.goldColor,
-                            ),
-                            SizedBox(
-                              width: 1.w,
-                            ),
-                            CustomText(
-                              data:
-                                  '(124 ${AppLocalizations.of(context)!.ratings})',
-                              size: 9.sp,
-                              color: MyColors.placeHolderColor,
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: .5.h,
-                        ),
-                        Row(
-                          children: [
-                            CustomText(
-                              data: AppLocalizations.of(context)!.resturanttybe,
-                              size: 9.sp,
-                              color: MyColors.placeHolderColor,
-                            ),
-                            CustomText(
-                              data: '.',
-                              size: 9.sp,
-                              color: MyColors.goldColor,
-                            ),
-                            CustomText(
-                              data: AppLocalizations.of(context)!.foodtybe,
-                              size: 9.sp,
-                              color: MyColors.placeHolderColor,
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: .5.h,
-                        ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.location_on_rounded,
-                              color: MyColors.goldColor,
-                              size: 9.sp,
-                            ),
-                            CustomText(
-                              data: 'No 03, 4th Lane, Newyork',
-                              size: 9.sp,
-                              color: MyColors.placeHolderColor,
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: .5.h,
-                        ),
-                      ],
-                    ),
-                    const Spacer(
-                      flex: 1,
-                    ),
-                    Center(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      SizedBox(
+                        height: 1.h,
+                      ),
+                      Row(
                         children: [
-                          SizedBox(
-                            height: 1.h,
+                          Icon(
+                            Icons.star,
+                            color: MyColors.goldColor,
+                            size: 8.sp,
                           ),
                           CustomText(
-                            data: AppLocalizations.of(context)!.total,
-                            weight: FontWeight.bold,
-                            size: 10.sp,
-                            color: MyColors.primarColor,
-                          ),
-                          CustomText(
-                            data: '\$50',
-                            weight: FontWeight.bold,
-                            size: 17.sp,
+                            data: '4.9',
+                            size: 9.sp,
+                            weight: FontWeight.w400,
                             color: MyColors.goldColor,
                           ),
+                          SizedBox(
+                            width: 1.w,
+                          ),
                           CustomText(
-                            data: 'COD',
-                            weight: FontWeight.bold,
-                            size: 10.sp,
-                            color: MyColors.primarColor,
+                            data: '(124 ${App.tr.ratings})',
+                            size: 8.sp,
+                            weight: FontWeight.w400,
+                            color: MyColors.placeHolderColor,
                           ),
                         ],
                       ),
-                    ),
-                    SizedBox(
-                      width: 3.w,
-                    ),
-                  ],
-                ),
+                      SizedBox(
+                        height: 1.h,
+                      ),
+                      Row(
+                        children: [
+                          CustomText(
+                            data: App.tr.resturanttybe,
+                            size: 8.sp,
+                            color: MyColors.placeHolderColor,
+                          ),
+                          CustomText(
+                            data: '.',
+                            size: 8.sp,
+                            weight: FontWeight.w400,
+                            color: MyColors.goldColor,
+                          ),
+                          CustomText(
+                            data: App.tr.foodtybe,
+                            size: 8.sp,
+                            weight: FontWeight.w400,
+                            color: MyColors.placeHolderColor,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 1.h,
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.location_on_rounded,
+                            color: MyColors.goldColor,
+                            size: 9.sp,
+                          ),
+                          CustomText(
+                            data: 'No 03, 4th Lane, Newyork',
+                            size: 8.sp,
+                            weight: FontWeight.w400,
+                            color: MyColors.placeHolderColor,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 10.w,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 2.h,
+                      ),
+                      CustomText(
+                        data: App.tr.total,
+                        weight: FontWeight.w400,
+                        size: 11.sp,
+                        color: MyColors.primarColor,
+                      ),
+                      CustomText(
+                        data: '\$50',
+                        weight: FontWeight.w800,
+                        size: 20.sp,
+                        color: MyColors.goldColor,
+                      ),
+                      CustomText(
+                        data: 'COD',
+                        weight: FontWeight.w800,
+                        size: 13.sp,
+                        color: MyColors.primarColor,
+                      ),
+                    ],
+                  ),
+                ],
               ),
-            ),
-            SizedBox(
-              height: 1.h,
             ),
             _orderProperites(context, widget),
             SizedBox(
@@ -246,7 +229,6 @@ class MyOrderScreen extends StatelessWidget {
 
   _orderdone(
     context, {
-    VoidCallback? track,
     VoidCallback? cancel,
   }) {
     return Row(
@@ -261,11 +243,11 @@ class MyOrderScreen extends StatelessWidget {
         CustomButton(
           ontap: cancel,
           // ontap: ,
-          fontsize: 14.sp,
-          text: AppLocalizations.of(context)!.cancel,
-          height: .5.h,
 
-          width: 22.w,
+          text: AppLocalizations.of(context)!.cancel,
+          height: 3.2.h,
+          fontsize: 9.sp,
+          width: 20.8.w,
           butcolor: MyColors.goldColor,
         ),
       ],
@@ -284,11 +266,10 @@ class MyOrderScreen extends StatelessWidget {
         CustomButton(
           ontap: canceled,
           // ontap: ,
-          fontsize: 14.sp,
           text: 'Canceled',
-          height: .5.h,
-
-          width: 22.w,
+          height: 3.2.h,
+          fontsize: 9.sp,
+          width: 23.w,
           butcolor: MyColors.goldColor,
         ),
       ],
@@ -315,11 +296,18 @@ class MyOrderScreen extends StatelessWidget {
                               height: MediaQuery.of(context).size.height * .02,
                               child: Padding(
                                 padding: EdgeInsets.symmetric(horizontal: 3.w),
-                                child: CustomText(
-                                  data: AppLocalizations.of(context)!.orderitem,
-                                  color: MyColors.primarColor,
-                                  weight: FontWeight.w500,
-                                  size: 10.sp,
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    CustomText(
+                                      data: AppLocalizations.of(context)!
+                                          .orderitem,
+                                      size: 9.sp,
+                                      weight: FontWeight.w500,
+                                      color: MyColors.primarColor,
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
@@ -340,34 +328,19 @@ class MyOrderScreen extends StatelessWidget {
             const Spacer(
               flex: 1,
             ),
-            const Icon(
+            Icon(
               Icons.add,
+              size: 14.sp,
               color: MyColors.goldColor,
             ),
             InkWell(
               onTap: () {
-                showGeneralDialog(
-                  context: context,
-                  barrierLabel: "withdraw",
-                  barrierDismissible: true,
-                  barrierColor: Colors.black.withOpacity(0.5),
-                  transitionDuration: const Duration(milliseconds: 400),
-                  pageBuilder: (context, a1, a2) {
-                    return const NoteBox();
-                  },
-                  transitionBuilder: (context, anim1, anim2, child) {
-                    return SlideTransition(
-                      position:
-                          Tween(begin: const Offset(0, 1), end: Offset.zero)
-                              .animate(anim1),
-                      child: child,
-                    );
-                  },
-                );
+                bottomSheet(context, const NoteBox());
               },
               child: CustomText(
                 data: AppLocalizations.of(context)!.addnote,
                 size: 9.sp,
+                weight: FontWeight.w500,
                 color: MyColors.goldColor,
               ),
             ),
@@ -382,7 +355,7 @@ class MyOrderScreen extends StatelessWidget {
 
   Widget acceptbutton(BuildContext context) {
     return SizedBox(
-        height: 4.h,
+        height: 3.2.h,
         width: 36.w,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
@@ -397,6 +370,7 @@ class MyOrderScreen extends StatelessWidget {
               CustomText(
                 data: 'Accept',
                 color: Colors.white,
+                size: 12.sp,
               ),
               CustomText(
                 data: '30 sec',
@@ -422,12 +396,13 @@ class MyOrderScreen extends StatelessWidget {
             child: CustomText(
               data: " Rejected Orders   2",
               color: MyColors.placeHolderColor,
-              // weight: FontWeight.w600,
+              weight: FontWeight.w400,
+              size: 9.sp,
             ),
           ),
         ),
         SizedBox(
-          height: 1.h,
+          height: .5.h,
         ),
         CustomText(
           data: '1 more before Block',
@@ -440,10 +415,10 @@ class MyOrderScreen extends StatelessWidget {
 
   _driverdetails(context) {
     return Container(
-        height: 13.h,
+        height: 12.h,
         width: 80.w,
         decoration: BoxDecoration(
-          color: MyColors.textFormColor,
+          color: MyColors.cardColors,
           borderRadius: BorderRadius.circular(7.h),
         ),
         child: Row(
@@ -453,7 +428,7 @@ class MyOrderScreen extends StatelessWidget {
               width: 2.w,
             ),
             CircleAvatar(
-              radius: 6.h,
+              radius: 10.w,
               backgroundColor: MyColors.textFormColor,
               child: Container(
                 height: MediaQuery.of(context).size.width * .3,
@@ -481,25 +456,37 @@ class MyOrderScreen extends StatelessWidget {
                     CustomText(
                       data: 'Rate',
                       color: MyColors.placeHolderColor,
+                      weight: FontWeight.w400,
+                      size: 9.sp,
                     ),
                     SizedBox(
-                      width: 5.w,
+                      width: 7.w,
                     ),
-                    SizedBox(
-                      height: 2.h,
-                      width: 20.w,
-                      child: const Rating(rate: 4),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          height: 2.h,
+                          // width: 40.w,
+                          child: Rating(rate: 3, size: 15.sp),
+                        ),
+                        SizedBox(
+                          height: .5.h,
+                        ),
+                      ],
                     )
                   ],
                 ),
-                SizedBox(
-                  height: .5.h,
-                ),
+                // SizedBox(
+                //   height: .7.h,
+                // ),
                 Row(
                   children: [
                     CustomText(
                       data: 'Orders',
                       color: MyColors.placeHolderColor,
+                      weight: FontWeight.w400,
+                      size: 9.sp,
                     ),
                     SizedBox(
                       width: 5.w,
@@ -507,6 +494,8 @@ class MyOrderScreen extends StatelessWidget {
                     CustomText(
                       data: '250',
                       color: MyColors.placeHolderColor,
+                      weight: FontWeight.w600,
+                      size: 9.sp,
                     ),
                   ],
                 ),
@@ -519,6 +508,8 @@ class MyOrderScreen extends StatelessWidget {
                     CustomText(
                       data: "credit",
                       color: MyColors.placeHolderColor,
+                      weight: FontWeight.w400,
+                      size: 9.sp,
                     ),
                     SizedBox(
                       width: 7.w,
@@ -526,6 +517,8 @@ class MyOrderScreen extends StatelessWidget {
                     CustomText(
                       data: '250',
                       color: MyColors.placeHolderColor,
+                      weight: FontWeight.w600,
+                      size: 9.sp,
                     ),
                   ],
                 ),

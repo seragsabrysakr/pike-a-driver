@@ -69,4 +69,5 @@ static const String creditandtranzicon =
   static const String mainfont = 'Metropolis';
   static const String glassmorf = 'assets/images/glass.PNG';
   static const String splash = 'assets/images/graber.png';
+    static const String order = 'assets/images/burger.png';
 }

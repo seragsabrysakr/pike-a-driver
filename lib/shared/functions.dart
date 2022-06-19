@@ -36,3 +36,22 @@ selectimage(BuildContext context,{VoidCallback? camera,VoidCallback? gallary}) {
         );
       });
       }
+Future<dynamic> bottomSheet(context, Widget screen,
+    {bool rootnavigator = true}) {
+  return showModalBottomSheet(
+      backgroundColor: Colors.transparent,
+      context: context,
+      isScrollControlled: true,
+      useRootNavigator: rootnavigator,
+      isDismissible: true,
+      builder: (BuildContext context) {
+        return DraggableScrollableSheet(
+            initialChildSize: 0.8, //set this as you want
+            maxChildSize: 0.8, //set this as you want
+            minChildSize: 0.8, //set this as you want
+            expand: true,
+            builder: (context, scrollController) {
+              return screen; //whatever you're returning, does not have to be a Container
+            });
+      });
+}

@@ -5,27 +5,26 @@ import '../../../../shared/colors.dart';
 
 class Rating extends StatelessWidget {
   final int rate;
+  final double size;
 
   const Rating({
     Key? key,
-    required this.rate,
+    required this.rate, required this.size,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         tick1(),
-        spacer(),
-        spacer(),
+        // spacer(),
         tick2(),
-        spacer(),
-        spacer(),
+        // spacer(),
         tick3(),
-        spacer(),
-        spacer(),
+        // spacer(),
         tick4(),
-        spacer(),
+        // spacer(),
         tick5(),
       ],
     );
@@ -33,13 +32,15 @@ class Rating extends StatelessWidget {
 
   Widget tick(bool isChecked) {
     return isChecked
-        ? const Icon(
+        ? Icon(
             Icons.star_rate,
             color: MyColors.goldColor,
+            size: size,
           )
-        : const Icon(
+        : Icon(
             Icons.star_border_purple500_outlined,
             color: MyColors.goldColor,
+            size:size ,
           );
   }
 

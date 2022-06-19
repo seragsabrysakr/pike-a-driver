@@ -41,6 +41,7 @@ class App extends StatelessWidget {
   final SharedPreferences preferences;
   static late BuildContext appContext;
   static late AppLocalizations tr;
+
   const App({Key? key, required this.preferences}) : super(key: key);
 
   @override
@@ -84,10 +85,7 @@ class App extends StatelessWidget {
         ));
   }
 
-  Locale? localization(
-    locale,
-    supportedLocales,
-  ) {
+  Locale? localization(locale, supportedLocales) {
     for (var supportedLocaleLanguage in supportedLocales) {
       if (supportedLocaleLanguage.languageCode == locale?.languageCode &&
           supportedLocaleLanguage.countryCode == locale?.countryCode) {
